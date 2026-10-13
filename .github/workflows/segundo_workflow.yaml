@@ -6,8 +6,8 @@ jobs:
     name: "Let's greet the user!"
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello there!"
-      - uses: actions/checkout@v3
-      - name: display contents of list.txt
-        run: cat .github/workflows/list.txt
-      - run: echo "I am step 4!"
+      run: echo "Hello there!"
+      uses: actions/checkout@v3
+      name: display contents of list.txt
+      run: cat ./.github/workflows/list.txt
+      run: echo "I am step 4!"
